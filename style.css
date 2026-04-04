@@ -81,6 +81,46 @@ a:visited {
   transform: translateX(2px);
 }
 
+.hamburger-menu {
+  display: none;
+  position: fixed;
+  top: 20px;
+  right: 20px;
+  z-index: 1001;
+  background: rgba(0,0,0,0.6);
+  border: none;
+  padding: 10px;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background 0.3s;
+}
+
+.hamburger-menu:hover {
+  background: rgba(0,0,0,0.8);
+}
+
+.hamburger-line {
+  display: block;
+  width: 25px;
+  height: 3px;
+  background: white;
+  margin: 5px 0;
+  transition: all 0.3s;
+  transform-origin: center;
+}
+
+.hamburger-menu.open .hamburger-line:nth-child(1) {
+  transform: rotate(45deg) translate(5px, 5px);
+}
+
+.hamburger-menu.open .hamburger-line:nth-child(2) {
+  opacity: 0;
+}
+
+.hamburger-menu.open .hamburger-line:nth-child(3) {
+  transform: rotate(-45deg) translate(7px, -6px);
+}
+
 .container {
   margin-left: 220px;
   padding: 20px;
@@ -151,11 +191,27 @@ a:visited {
 }
 
 @media (max-width: 768px) {
-  .sidebar {
-    position: relative;
-    width: 100%;
-    height: auto;
+  .hamburger-menu {
+    display: block;
   }
+  
+  .sidebar {
+    position: fixed;
+    left: -220px;
+    top: 0;
+    width: 200px;
+    height: 100%;
+    background: rgba(0,0,0,0.8);
+    padding: 20px;
+    box-sizing: border-box;
+    z-index: 1000;
+    transition: left 0.3s ease;
+  }
+  
+  .sidebar.open {
+    left: 0;
+  }
+  
   .container {
     margin-left: 0;
   }

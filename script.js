@@ -114,6 +114,12 @@ document.querySelectorAll('.menu-button').forEach(button => {
       }
     }
     
+    // Close mobile menu after navigation
+    if (window.innerWidth <= 768) {
+      hamburgerMenu.classList.remove('open');
+      sidebar.classList.remove('open');
+    }
+    
     scrollToSection(section);
   });
 });
@@ -132,3 +138,23 @@ document.querySelectorAll('.tab-button').forEach(button => {
 function navigateTo(url) {
   window.location.href = url;
 }
+
+// Hamburger menu toggle
+const hamburgerMenu = document.getElementById('hamburger-menu');
+const sidebar = document.querySelector('.sidebar');
+
+hamburgerMenu.addEventListener('click', () => {
+  hamburgerMenu.classList.toggle('open');
+  sidebar.classList.toggle('open');
+});
+
+// Close sidebar when clicking outside on mobile
+document.addEventListener('click', (e) => {
+  if (window.innerWidth <= 768 && 
+      !sidebar.contains(e.target) && 
+      !hamburgerMenu.contains(e.target) && 
+      sidebar.classList.contains('open')) {
+    hamburgerMenu.classList.remove('open');
+    sidebar.classList.remove('open');
+  }
+});
