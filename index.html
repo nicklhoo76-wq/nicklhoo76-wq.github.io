@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Galaxy 3D Page</title>
+  <link rel="stylesheet" href="style.css">
+  <script type="importmap">
+  {
+    "imports": {
+      "three": "https://cdn.jsdelivr.net/npm/three@0.160.0/build/three.module.js"
+    }
+  }
+  </script>
+</head>
+<body>
+
+  <div id="three-container"></div>
+
+  <nav class="sidebar">
+    <h2>Menu</h2>
+    <button class="menu-button" data-section="home">Home</button>
+    <button class="menu-button" data-section="about">About</button>
+    <button class="menu-button" data-section="projects">Projects</button>
+    <button class="menu-button" data-section="skills">Skills</button>
+    <button class="menu-button" data-section="others">Others</button>
+  </nav>
+
+  <div class="container">
+    <section id="home" class="card main-card">
+      <h1>Welcome to My Website!</h1>
+    </section>
+
+    <section id="about" class="card main-card">
+      <h1>Yunqi Lu</h1>
+      <p>Student / Developer / Researcher</p>
+      <p><a href="https://bit.edu.cn">Beijing Institution of Technology</a>
+         / <a href="https://cs.bit.edu.cn">Computer Science and Technology</a>
+      </p>
+      <p>Email: nicklhoo76@gmail.com / yunqilu@bit.edu.cn</p>
+      <p>GitHub: <a href="https://github.com/nicklhoo76-wq">github.com/nicklhoo76-wq</a></p>
+    </section>
+
+    <section class="card">
+      <div class="tabs">
+        <button class="tab-button active" data-tab="projects">Projects</button>
+        <button class="tab-button" data-tab="skills">Skills</button>
+        <button class="tab-button" data-tab="others">Others</button>
+      </div>
+      <div class="tab-content">
+        <div class="tab-pane active" id="projects">
+          <div class="item-box" onclick="navigateTo('project1.html')">Project 1
+            <br><br><br><br><br><br>
+          </div>
+          <div class="item-box" onclick="navigateTo('project2.html')">Project 2
+            <br><br><br><br><br><br>
+          </div>
+          <div class="item-box" onclick="navigateTo('project3.html')">Project 3
+            <br><br><br><br><br><br>
+          </div>
+        </div>
+        <div class="tab-pane" id="skills">
+          <div class="item-box" onclick="navigateTo('skill1.html')">Python
+            <br><br><br><br><br><br>
+          </div>
+          <div class="item-box" onclick="navigateTo('skill2.html')">ML
+            <br><br><br><br><br><br>
+          </div>
+          <div class="item-box" onclick="navigateTo('skill3.html')">Web
+            <br><br><br><br><br><br>
+          </div>
+        </div>
+        <div class="tab-pane" id="others">
+          <div class="item-box" onclick="navigateTo('article1.html')">Article 1
+            <br><br><br><br><br><br>
+          </div>
+          <div class="item-box" onclick="navigateTo('article2.html')">Article 2
+            <br><br><br><br><br><br>
+          </div>
+          <div class="item-box" onclick="navigateTo('article3.html')">Article 3
+            <br><br><br><br><br><br>
+          </div>
+        </div>
+      </div>
+    </section>
+  </div>
+
+  <script type="module" src="script.js"></script>
+</body>
+</html>
