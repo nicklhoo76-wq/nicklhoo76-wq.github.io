@@ -1,9 +1,12 @@
 html,
 body {
   margin: 0;
+  width: 100%;
+  height: 100%;
   min-height: 100vh;
   background: #000;
   color: #fff;
+  overflow-x: hidden;
 }
 
 body {
@@ -29,7 +32,10 @@ a:visited {
   position: fixed;
   inset: 0;
   z-index: 0;
-  background: url('assert/stars.png') center/cover no-repeat fixed;
+  background: url('assert/stars.png') center/cover no-repeat;
+  background-attachment: fixed;
+  width: 100vw;
+  height: 100vh;
   filter: brightness(0.65);
 }
 
@@ -191,6 +197,10 @@ a:visited {
 }
 
 @media (max-width: 768px) {
+  #three-container {
+    background-attachment: scroll;
+  }
+  
   .hamburger-menu {
     display: block;
   }
