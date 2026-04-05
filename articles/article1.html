@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Yunqi Lu Website</title>
+  <link rel="stylesheet" href="../style.css">
+  <script type="importmap">
+  {
+    "imports": {
+      "three": "https://cdn.jsdelivr.net/npm/three@0.160.0/build/three.module.js"
+    }
+  }
+  </script>
+</head>
+<body>
+
+  <div id="three-container"></div>
+
+  <button id="hamburger-menu" class="hamburger-menu">
+    <span class="hamburger-line"></span>
+    <span class="hamburger-line"></span>
+    <span class="hamburger-line"></span>
+  </button>
+
+  <nav class="sidebar">
+    <h2>Menu</h2>
+    <button class="menu-button" data-section="home" onclick="window.location.href='../index.html'">Home</button>
+    <button class="menu-button" data-section="about" onclick="window.location.href='../index.html'">About</button>
+    <button class="menu-button" data-section="projects">Projects</button>
+    <button class="menu-button" data-section="skills">Skills</button>
+    <button class="menu-button" data-section="others">Others</button>
+  </nav>
+
+  <div class="container">
+    <section class="card main-card">
+      <div class="article-title-bar">
+        <span class="article-nav-button disabled">←</span>
+        <div class="article-title-group">
+          <h1>新的一年，写给自己</h1>
+          <p class="time-tag">2025-1-1</p>
+        </div>
+        <a class="article-nav-button next" href="article2.html">[Article]无羁</a>
+      </div>
+      <hr>
+      <h3 class="text">这一年过得很快，回想起来，有很多的重要时刻。</h3>
+      <h3 class="text">我复读的第二学期，寒假回来接连不断的考试其实没有什么太多的印象，只是至少现在觉得没有第一年的奋斗热情了吧，感觉好像自己知道的很多，又有好多不知道的。
+        没办法的吧，再上一次思想非常复杂，挂念的东西太多了，顾及的东西太多了，好像已经不知道意义在哪里了。
+        最后考试的时候，数学那一科的心态没有调整过来，直接大崩盘，也影响到了我的理综，导致时间不够，浪费了很多。
+        那时总说比第一次好就行了，估完分数，我竟然还对那个成绩满意，结果跟第一次一样，估高了十几分。
+        这之前关于南大给自己做的思想工作完全没有用处了，努力的调整心态，在高考报志愿的过程中挣扎。
+        其实说实话，来到这所学校之时我还是满心欢喜的，它也没有那么的差。
+        还是以我高一时的水平，我肯定觉得能考到这里很不错了，但是后来我都觉得自己学的很好，不是清北至少也是上交复旦吧。
+        可是这样的结果，真的需要很多时间接受。
+        以至于到现在，过了半年的时间，当然没有那么难受了，但是还是会偶尔隐隐约约想起来，我本来也能到清北复交的；
+        去找其他的清北同学，也总觉得相处时还是会尴尬，比起羡慕，更多的是遗憾和婉惜。
+      </h3>
+      <h3 class="text">来到这里，我终于也准备好成为一名大学生了。
+        比大部分同学大一岁的年纪，好像也不是那么明显。
+        宽敞的宿舍，有隔间的浴室，面积比较大的校园，令人充满探索欲望的学习内容，这些都让我感觉耳目一新。
+        八月艰苦的军训，每周三次的早八，在活动中快乐享受时光，偶尔去天街吃一顿，点点外卖，有机会睡的懒觉，隔上三四天就要洗的衣服拖的地，
+        有时候在操场上跑步，一起和同学或是自己一个人在教学楼自习，被c语言的debug折磨的日日夜夜。
+        这么多的时刻无法忘记，让我明白这是和高中完全不一样的生活。
+      </h3>
+      <h3 class="text">这一年来，有很多难以忘怀的时刻。
+        写到这里，我才发现这一年是值得回忆的一年，充满不如意，充满欢声笑语的一年，人生中独一无二的一年。
+        这一年中的很多时刻会让我感动，会让我快乐，会让我回味。
+        顿然感到一切长长短短，斤斤两两都不重要了，因为这是新的一年，我们都有新的路要走。
+        这一年回望以前的时候太多了，有时反而会被琐事闲杂挡住视线，看不清前方的路。
+        新的一年里，祝愿我多向前面看一看吧，前面的路上沿途还有好多风景，好多快乐让我感受，好多美好让我珍藏，好多时光让我再回忆。
+        无论怎样，人生总要向前充满希望，不顾那些小风小浪，才能真正地实现些什么，成为些什么。
+      </h3>
+      <h3 class="text">有的人看见了才相信，而有的人因为相信最终看见。
+        想把这句话送给我自己和陪我走过十九年半的点点滴滴，愿我们新的2025年，生活充满希望，每一天都光辉灿烂！
+      </h3>
+    </section>
+
+    <section class="card">
+      <div class="tabs">
+        <button class="tab-button" data-tab="projects">Projects</button>
+        <button class="tab-button" data-tab="skills">Skills</button>
+        <button class="tab-button active" data-tab="others">Others</button>
+      </div>
+      <div class="tab-content">
+        <div class="tab-pane" id="projects">
+          <div class="item-box" onclick="navigateTo('project1.html')">Project 1
+            <br><br><br><br><br><br>
+          </div>
+          <div class="item-box" onclick="navigateTo('project2.html')">Project 2
+            <br><br><br><br><br><br>
+          </div>
+          <div class="item-box" onclick="navigateTo('project3.html')">Project 3
+            <br><br><br><br><br><br>
+          </div>
+        </div>
+        <div class="tab-pane" id="skills">
+          <div class="item-box" onclick="navigateTo('skill1.html')">Python
+            <br><br><br><br><br><br>
+          </div>
+          <div class="item-box" onclick="navigateTo('skill2.html')">ML
+            <br><br><br><br><br><br>
+          </div>
+          <div class="item-box" onclick="navigateTo('skill3.html')">Web
+            <br><br><br><br><br><br>
+          </div>
+        </div>
+        <div class="tab-pane active" id="others">
+          <div class="item-box" onclick="window.location.href='article4.html'">[Article] 从2025到2026
+            <p class="time-tag">2025-12-27</p>
+            <p class="text">人生的第二十年即将离开，或许我还是有些幼稚，在面对一些事情的时候陷入左思右想，
+              但是终究还是成熟了一些吧，尝试对自己的人生负责了。往后的话，抓紧时间，仍不忘初心已经足矣。
+            </p>
+          </div>
+          <div class="item-box" onclick="window.location.href='article3.html'">[Article] 二十岁的成年
+            <p class="time-tag">2025-6-25</p>
+            <p class="text">哪里有什么一瞬间的长大，冰冻三尺、蜡炬成灰才是成长。
+            </p>
+          </div>
+          <div class="item-box" onclick="window.location.href='article2.html'">[Article] 无羁
+            <p class="time-tag">2025-5-6</p>
+            <p class="text">戴上“枷锁”，脱下“枷锁”，人生或许就是在这两种状态之间摇摆。
+              已然戴上的，便想要去脱下；已然脱下，又不知不觉戴上了其他。
+              或许坦然接受一定的枷锁，坦然面对一定的羁绊，这不失为一种可取之道。
+            </p>
+          </div>
+          <div class="item-box" onclick="window.location.href='article1.html'">[Article] 新的一年，写给自己
+            <p class="time-tag">2025-1-1</p>
+            <p class="text">有的人看见了才相信，而有的人因为相信最终看见。 
+              想把这句话送给我自己和陪我走过十九年半的点点滴滴，愿我们新的2025年，生活充满希望，每一天都光辉灿烂！
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+  </div>
+
+  <script type="module" src="../script.js"></script>
+</body>
+</html>

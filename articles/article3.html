@@ -4,7 +4,7 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Yunqi Lu Website</title>
-  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="../style.css">
   <script type="importmap">
   {
     "imports": {
@@ -25,36 +25,51 @@
 
   <nav class="sidebar">
     <h2>Menu</h2>
-    <button class="menu-button" data-section="home">Home</button>
-    <button class="menu-button" data-section="about">About</button>
+    <button class="menu-button" data-section="home" onclick="window.location.href='../index.html'">Home</button>
+    <button class="menu-button" data-section="about" onclick="window.location.href='../index.html'">About</button>
     <button class="menu-button" data-section="projects">Projects</button>
     <button class="menu-button" data-section="skills">Skills</button>
     <button class="menu-button" data-section="others">Others</button>
   </nav>
 
   <div class="container">
-    <section id="home" class="card main-card">
-      <h1>Welcome to My Website!</h1>
-    </section>
-
-    <section id="about" class="card main-card">
-      <h1>Yunqi Lu</h1>
-      <p>Student / Developer / Researcher</p>
-      <p><a href="https://bit.edu.cn">Beijing Institution of Technology</a>
-         / <a href="https://cs.bit.edu.cn">Computer Science and Technology</a>
-      </p>
-      <p>Email: nicklhoo76@gmail.com / yunqilu@bit.edu.cn</p>
-      <p>GitHub: <a href="https://github.com/nicklhoo76-wq">github.com/nicklhoo76-wq</a></p>
+    <section class="card main-card">
+      <div class="article-title-bar">
+        <a class="article-nav-button prev" href="article2.html">[Article]无羁</a>
+        <div class="article-title-group">
+          <h1>二十岁的成年</h1>
+          <p class="time-tag">2025-6-25</p>
+        </div>
+        <a class="article-nav-button next" href="article4.html">[Article]从2025到2026</a>
+      </div>
+      <hr>
+      <h3 class="text">也不知道为什么，感觉深夜就是适合码字的时候。
+        时间过得真快啊，一眨眼二十年就过去了，数来也是七千个日夜。
+        两年前的今天虽然是十八岁的成人，但我却觉得我稚气未脱，傻傻的不明白很多东西，永远在一个世界里兜圈，
+        就连当时也感觉心理年龄还没有十八岁，还活在十七岁。
+        这两年发生了很多事情，我不希望自己生活在它的阴影之下，
+        但还是会在午夜梦回的时候伤神恍惚，就像一条原以为规划好的路线折了一个弯，往后无论再走多远，路程也永远要多算一段。
+        我不希望它是一根拔不掉的刺，而是一块终会化为丰碑的伤疤。
+        重走一次的机会给我在结果之外还是留下了一些，我感谢当时那份毅然决然，否则现在肯定会有几分后悔吧。
+      </h3>
+      <h3 class="text">哪里有什么一瞬间的长大，冰冻三尺、蜡炬成灰才是成长。
+        二十岁再成人，或许是命运开始把生活全权交到我的手中，让我一瞬间担上了担子罢；
+        但我希望，是在重复不知多少次的紧张纠结、恍惚无措之后，
+        我微不足道的成熟成为了企盼燎原那一刻的星星之火，能燃起那颗每日清晨在我心中升起的太阳。
+        经了多少事，遇了多少人，再回首时，我的心脏都在跳动。
+        世间至味是清欢，人生小满胜万全，不可追的往事就让它过去吧，再来时只作清风拂面；
+        二十岁的世界应当在尽人事之余还记得自己心中那点光，和有时会忘记的角落吧。
+      </h3>
     </section>
 
     <section class="card">
       <div class="tabs">
-        <button class="tab-button active" data-tab="projects">Projects</button>
+        <button class="tab-button" data-tab="projects">Projects</button>
         <button class="tab-button" data-tab="skills">Skills</button>
-        <button class="tab-button" data-tab="others">Others</button>
+        <button class="tab-button active" data-tab="others">Others</button>
       </div>
       <div class="tab-content">
-        <div class="tab-pane active" id="projects">
+        <div class="tab-pane" id="projects">
           <div class="item-box" onclick="navigateTo('project1.html')">Project 1
             <br><br><br><br><br><br>
           </div>
@@ -76,26 +91,26 @@
             <br><br><br><br><br><br>
           </div>
         </div>
-        <div class="tab-pane" id="others">
-          <div class="item-box" onclick="window.location.href='articles/article4.html'">[Article] 从2025到2026
+        <div class="tab-pane active" id="others">
+          <div class="item-box" onclick="window.location.href='article4.html'">[Article] 从2025到2026
             <p class="time-tag">2025-12-27</p>
             <p class="text">人生的第二十年即将离开，或许我还是有些幼稚，在面对一些事情的时候陷入左思右想，
               但是终究还是成熟了一些吧，尝试对自己的人生负责了。往后的话，抓紧时间，仍不忘初心已经足矣。
             </p>
           </div>
-          <div class="item-box" onclick="window.location.href='articles/article3.html'">[Article] 二十岁的成年
+          <div class="item-box" onclick="window.location.href='article3.html'">[Article] 二十岁的成年
             <p class="time-tag">2025-6-25</p>
             <p class="text">哪里有什么一瞬间的长大，冰冻三尺、蜡炬成灰才是成长。
             </p>
           </div>
-          <div class="item-box" onclick="window.location.href='articles/article2.html'">[Article] 无羁
+          <div class="item-box" onclick="window.location.href='article2.html'">[Article] 无羁
             <p class="time-tag">2025-5-6</p>
             <p class="text">戴上“枷锁”，脱下“枷锁”，人生或许就是在这两种状态之间摇摆。
               已然戴上的，便想要去脱下；已然脱下，又不知不觉戴上了其他。
               或许坦然接受一定的枷锁，坦然面对一定的羁绊，这不失为一种可取之道。
             </p>
           </div>
-          <div class="item-box" onclick="window.location.href='articles/article1.html'">[Article] 新的一年，写给自己
+          <div class="item-box" onclick="window.location.href='article1.html'">[Article] 新的一年，写给自己
             <p class="time-tag">2025-1-1</p>
             <p class="text">有的人看见了才相信，而有的人因为相信最终看见。 
               想把这句话送给我自己和陪我走过十九年半的点点滴滴，愿我们新的2025年，生活充满希望，每一天都光辉灿烂！
@@ -106,6 +121,6 @@
     </section>
   </div>
 
-  <script type="module" src="script.js"></script>
+  <script type="module" src="../script.js"></script>
 </body>
 </html>

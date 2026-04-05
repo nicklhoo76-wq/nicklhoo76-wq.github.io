@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Yunqi Lu Website</title>
+  <link rel="stylesheet" href="../style.css">
+  <script type="importmap">
+  {
+    "imports": {
+      "three": "https://cdn.jsdelivr.net/npm/three@0.160.0/build/three.module.js"
+    }
+  }
+  </script>
+</head>
+<body>
+
+  <div id="three-container"></div>
+
+  <button id="hamburger-menu" class="hamburger-menu">
+    <span class="hamburger-line"></span>
+    <span class="hamburger-line"></span>
+    <span class="hamburger-line"></span>
+  </button>
+
+  <nav class="sidebar">
+    <h2>Menu</h2>
+    <button class="menu-button" data-section="home" onclick="window.location.href='../index.html'">Home</button>
+    <button class="menu-button" data-section="about" onclick="window.location.href='../index.html'">About</button>
+    <button class="menu-button" data-section="projects">Projects</button>
+    <button class="menu-button" data-section="skills">Skills</button>
+    <button class="menu-button" data-section="others">Others</button>
+  </nav>
+
+  <div class="container">
+    <section class="card main-card">
+      <div class="article-title-bar">
+        <a class="article-nav-button prev" href="article1.html">[Article]新的一年，写给自己</a>
+        <div class="article-title-group">
+          <h1>无羁</h1>
+          <p class="time-tag">2025-5-6</p>
+        </div>
+        <a class="article-nav-button next" href="article3.html">[Article]二十岁的成年</a>
+      </div>
+      <hr>
+      <h3 class="text">每个人出生时来自家庭，走进学校，离开大学，又走入社会。
+        孩提时期或许最为天真烂漫，小孩子对于很多事都很少顾虑，常笑称“童言无忌”，并不需要了解那些“大人的事情”，往往最为自由。
+        等到我们长大，成长伴随着的，就是改变。
+        我们渐渐被这个社会所塑造，习得了很多规矩，经历了与他人想法的不一致，领受了生活的教训……
+        这许许多多的时刻都在潜移默化地影响着我们，修剪掉我们旁逸斜出的枝丫，在我们的精神之中塞满各种考虑，有的时候甚至为我们上了镣铐。
+        我们时时刻刻都难以摆脱这些方方面面的“羁绊”，亦是——“枷锁”。
+      </h3>
+      <h3 class="text">毛姆书中的主人公经历了很多事，在“人生的枷锁”之中寻找到了人生真谛。
+        每个人都有自己的烦恼，都想让“久在樊笼里”的自我“复得返自然”。
+        但又有多少人能拥有陶渊明的境界？有多少人能够抛却自己所在世间的一切羁绊，完全投身于自己的乌托邦？
+        对大多数人而言，童话世界只能存在于心里和期盼之中，真正的超脱很难实现。
+      </h3>
+      <h3 class="text">那有没有可能存在一种“无羁”的状态呢？
+        我想，这种状态应该并不是抛却一切，遗世而独立，而是一种明事理之中心，破认知之限制吧。
+        “格物而致知”，在一定的认识基础之上，先经历事情，探查事物，由此获得经验。
+        经验的累积之后，看问题才会变得透彻，领悟到多个事情背后的本质共通规律，明白这世间最重要的是什么，这是我们每个人都应当思考的。
+        有了答案，我们便难以在日夜的生活之中因为繁杂琐事而乱了阵脚，难以在操劳忙碌之时迷失了本心，丢失了初心和使命。
+        一个人如何为人处事，看的是认知。认知决定了眼光，面对同样的事情，认知高的人会拿出高明而恰当的方式做事，而认知低的人要么手忙脚乱，要么犯些经验主义错误。
+        认知的限制往往是自己给自己的，影响了对世界的看法，局限了自我的发展道路。
+        事理中心和认知息息相关。根本规律的明确推动着认知的进步，探查和领悟他人所不能知的道理便超越常人；
+        破除限制方见证世间百态，在思索中对很多问题有了崭新而深刻的认识，更能抓住本质。
+      </h3>
+      <h3 class="text">戴上“枷锁”，脱下“枷锁”，人生或许就是在这两种状态之间摇摆。
+        已然戴上的，便想要去脱下；已然脱下，又不知不觉戴上了其他。
+        或许坦然接受一定的枷锁，坦然面对一定的羁绊，这不失为一种可取之道。
+        对于抑郁症患者而言，一味的压抑负面情绪会使病情加重，拥抱它们反而有利于疾病痊愈；
+        如枷锁一般的羁绊也是这样，把“敌人”变成“朋友”，接受并友好相处，何尝不是一种乐观与豁达呢？
+        “无羁”是一种适应，一种对生活真正的热爱，在入世中寻找自由，就如鸟儿在天空翱翔一般，虽然天空并非完全广阔无边，鸟儿并非完全无限飞翔，但是怎能说，它是不自由的呢？
+      </h3>
+    </section>
+
+    <section class="card">
+      <div class="tabs">
+        <button class="tab-button" data-tab="projects">Projects</button>
+        <button class="tab-button" data-tab="skills">Skills</button>
+        <button class="tab-button active" data-tab="others">Others</button>
+      </div>
+      <div class="tab-content">
+        <div class="tab-pane" id="projects">
+          <div class="item-box" onclick="navigateTo('project1.html')">Project 1
+            <br><br><br><br><br><br>
+          </div>
+          <div class="item-box" onclick="navigateTo('project2.html')">Project 2
+            <br><br><br><br><br><br>
+          </div>
+          <div class="item-box" onclick="navigateTo('project3.html')">Project 3
+            <br><br><br><br><br><br>
+          </div>
+        </div>
+        <div class="tab-pane" id="skills">
+          <div class="item-box" onclick="navigateTo('skill1.html')">Python
+            <br><br><br><br><br><br>
+          </div>
+          <div class="item-box" onclick="navigateTo('skill2.html')">ML
+            <br><br><br><br><br><br>
+          </div>
+          <div class="item-box" onclick="navigateTo('skill3.html')">Web
+            <br><br><br><br><br><br>
+          </div>
+        </div>
+        <div class="tab-pane active" id="others">
+          <div class="item-box" onclick="window.location.href='article4.html'">[Article] 从2025到2026
+            <p class="time-tag">2025-12-27</p>
+            <p class="text">人生的第二十年即将离开，或许我还是有些幼稚，在面对一些事情的时候陷入左思右想，
+              但是终究还是成熟了一些吧，尝试对自己的人生负责了。往后的话，抓紧时间，仍不忘初心已经足矣。
+            </p>
+          </div>
+          <div class="item-box" onclick="window.location.href='article3.html'">[Article] 二十岁的成年
+            <p class="time-tag">2025-6-25</p>
+            <p class="text">哪里有什么一瞬间的长大，冰冻三尺、蜡炬成灰才是成长。
+            </p>
+          </div>
+          <div class="item-box" onclick="window.location.href='article2.html'">[Article] 无羁
+            <p class="time-tag">2025-5-6</p>
+            <p class="text">戴上“枷锁”，脱下“枷锁”，人生或许就是在这两种状态之间摇摆。
+              已然戴上的，便想要去脱下；已然脱下，又不知不觉戴上了其他。
+              或许坦然接受一定的枷锁，坦然面对一定的羁绊，这不失为一种可取之道。
+            </p>
+          </div>
+          <div class="item-box" onclick="window.location.href='article1.html'">[Article] 新的一年，写给自己
+            <p class="time-tag">2025-1-1</p>
+            <p class="text">有的人看见了才相信，而有的人因为相信最终看见。 
+              想把这句话送给我自己和陪我走过十九年半的点点滴滴，愿我们新的2025年，生活充满希望，每一天都光辉灿烂！
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+  </div>
+
+  <script type="module" src="../script.js"></script>
+</body>
+</html>
