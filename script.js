@@ -102,8 +102,8 @@ document.querySelectorAll('.menu-button').forEach(button => {
   button.addEventListener('click', () => {
     const section = button.dataset.section;
     
-    // Auto-switch tab for projects, skills, others
-    if (['projects', 'skills', 'others'].includes(section)) {
+    // Auto-switch tab for projects, skills, articles
+    if (['projects', 'skills', 'articles'].includes(section)) {
       document.querySelectorAll('.tab-button').forEach(btn => btn.classList.remove('active'));
       document.querySelectorAll('.tab-pane').forEach(pane => pane.classList.remove('active'));
       
