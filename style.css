@@ -144,19 +144,9 @@ a:visited {
   text-align: center;
 }
 
-.article-title-bar {
-  display: grid;
-  grid-template-columns: 190px minmax(220px, 1fr) 190px;
-  align-items: center;
-  gap: 16px;
-  margin-bottom: 12px;
-}
-
 .article-title-group {
   text-align: center;
-  justify-self: center;
-  width: 100%;
-  max-width: 500px;
+  margin-bottom: 12px;
 }
 
 .article-nav-button {
@@ -201,6 +191,15 @@ a:visited {
 .article-nav-button.disabled::before,
 .article-nav-button.disabled::after {
   content: '';
+}
+
+.article-nav-footer {
+  display: flex;
+  justify-content: space-between;
+  gap: 16px;
+  margin-top: 30px;
+  padding-top: 20px;
+  border-top: 1px solid rgba(255,255,255,0.2);
 }
 
 .tabs {
